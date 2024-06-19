@@ -26,6 +26,8 @@ echo -e "\e[32m +ENTER THE TARGET SERVER'S USER NAME:\e[0m"
 
 read name
 echo 
+echo -e "\e[32m +GENERATING SSH KEYS:\e[0m"
+ssh-keygen
 
 echo -e "\e[32m +SETTING UP PASSWORDLESS AUTHENTICATION:\e[0m"
 ssh-copy-id $name@$target
